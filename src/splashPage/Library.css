@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap")
+
+
 .App {
   text-align: center;
 }
@@ -21,8 +24,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: navy;
+}
+
+#cards{
+  background-color: white;
+  color: midnightblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1rem;
 }
 
 .App-link {

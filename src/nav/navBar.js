@@ -8,16 +8,15 @@ class NavBar extends Component {
 
     return (
       <header>
-        <h1 className="site-title">Student Kennels<br />
-          <small>Loving care when you're not there.</small>
+        <div id="background"></div>
+        <h1 className="site-title">Savant Athenaeum<br />
+          <small>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.” - Jane Austen</small>
         </h1>
         <nav>
           <ul className="container">
             <li><Link className="nav-link" to="/">Home</Link></li>
-            <li><Link className="nav-link" to="/animals">Animals</Link></li>
-            <li>Locations</li>
-            <li>Employees</li>
-            <li>Owners</li>
+            <li><Link className="nav-link" to="/books">Books</Link></li>
+            <li><Link className="nav-link" to="/patrons">Patrons</Link></li>
           </ul>
         </nav>
       </header>
@@ -26,3 +25,6 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+
+// <img id="image-library" src={require("./Library.jpg")} alt="Library" />
