@@ -1,13 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 
-function PatronCard () {
-  return (
-    <div className="App">
-      <section id="cards">
-        <h1>List of Patrons:</h1>
-      </section>
-    </div>
-  );
+class PatronCard extends Component {
+  render() {
+    return (
+      <div className="App">
+        <form id="cards">
+          <h2>List of Patrons:</h2>
+          <div>
+            <br />
+            <p>{this.props.patronProp.name}</p>
+          </div>
+        </form>
+      </div>
+    );
+  }
 }
-
 export default PatronCard;

@@ -1,4 +1,5 @@
-"libraries" [
+{
+    "libraries": [
     {
         "id": 1,
         "name": "Savant Athenaeum",
@@ -8,24 +9,98 @@
         "url": "wikipedia.com"
     }
 ], 
-"books" [
+"books": [
     {
         "id": 1,
         "libraryId": 1,
         "title": "Harry Potter and the Philosopher's Stone",
         "author": "J.K. Rowling",
         "genre": "Fantasy",
-        "ISBN": 12345
-    }
+        "ISBN": 12345,
+        "available": true
+    },
+    {
+        "id": 2,
+        "libraryId": 1,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123451,
+        "available": true
+    },
+    {
+        "id": 3,
+        "libraryId": 1,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123452,
+        "available": false
+    },
+    {
+        "id": 4,
+        "libraryId": 1,
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123453,
+        "available": true
+    },
+    {
+        "id": 5,
+        "libraryId": 1,
+        "title": "Harry Potter and the Order of Phoenix",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123454,
+        "available": false
+    },
+    {
+        "id": 6,
+        "libraryId": 1,
+        "title": "Harry Potter and the Half-Blood Prince",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123455,
+        "available": true
+    },
+{
+    "id": ,
+        "libraryId": 7,
+        "title": "Harry Potter and the Deathly Hallows",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "ISBN": 123456,
+        "available": true
+}
 ],
-"patrons" [
+"patrons": [
     {
         "id": 1,
         "libraryId": 1,
         "name": "Sarah Brooks",
         "phone": "474-555-5555",
         "email": "athenaeumLibrarian@sapl.org",
-        "DOB": "08/20/89"
+        "DOB": "08/20/89",
+        "active": true
+    },
+    {
+        "id": 2,
+        "libraryId": 1,
+        "name": "Paul Brooks",
+        "phone": "474-155-5555",
+        "email": "paulbobrookins@sapl.org",
+        "DOB": "10/14/81",
+        "active": true
+    },
+    {
+        "id": 3,
+        "libraryId": 1,
+        "name": "Hank Brooks",
+        "phone": "474-555-5555",
+        "email": "hank.brooks@sapl.org",
+        "DOB": "01/06/17",
+        "active": false
     }
 ],
 "bookHistories": [
@@ -38,3 +113,4 @@
         "checkInDate": "n/a"
     }
 ]
+}

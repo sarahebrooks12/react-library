@@ -1,9 +1,9 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
 import Library from './splashPage/Library'
-import BookCard from './books/BookCard'
+import BookList from './books/BookList'
 //only include these once they are built - previous practice exercise
-import PatronCard from './patrons/PatronCard'
+import PatronList from './patrons/PatronList'
 
 
 class ApplicationViews extends Component {
@@ -15,10 +15,10 @@ class ApplicationViews extends Component {
           return <Library />
         }} />
         <Route path="/books" render={(props) => {
-          return <BookCard />
+          return <BookList />
         }} />
         <Route path="/patrons" render={(props) => {
-          return <PatronCard />
+          return <PatronList />
         }} />
       </React.Fragment>
     )
