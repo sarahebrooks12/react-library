@@ -22,11 +22,15 @@ import React, { Component } from 'react'
     render(){
       
         return(
+          <>
+          <p>Search Books:</p>
+        <input type="text" id="search-books" placeholder="Search"></input>
           <div className="container-cards">
             {this.state.books.map(bookInLoop =>
               <BookCard key={bookInLoop.id} bookProp={bookInLoop} />
             )}
           </div>
+          </>
         )
       }
 }

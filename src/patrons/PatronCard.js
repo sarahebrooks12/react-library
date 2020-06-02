@@ -5,7 +5,6 @@ class PatronCard extends Component {
     return (
       <div className="App">
         <form id="cards">
-          <h2>List of Patrons:</h2>
           <div>
             <br />
             <p>{this.props.patronProp.name}</p>

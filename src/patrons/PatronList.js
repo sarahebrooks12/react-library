@@ -22,11 +22,14 @@ import React, { Component } from 'react'
     render(){
       
         return(
+          <>
+          <h2>List of Patrons:</h2>
           <div className="container-cards">
             {this.state.patrons.map(patronInLoop =>
               <PatronCard key={patronInLoop.id} patronProp={patronInLoop} />
             )}
           </div>
+          </>
         )
       }
 }
