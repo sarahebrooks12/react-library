@@ -2,7 +2,8 @@ import React, { Component } from 'react'
     //import the components we will need
     import BookCard from './BookCard'
     import BookManager from '../modules/BookManager'
-    import Col from 'react-bootstrap/Col';
+    import Container from 'react-bootstrap/Container';
+    import Row from 'react-bootstrap/Row';
 
 
     class BookList extends Component {
@@ -27,11 +28,15 @@ import React, { Component } from 'react'
           <>
           <p>Search Books:</p>
         <input type="text" id="search-books" placeholder="Search"></input>
+        <Container>
           <div className="container-cards">
+          <Row>
             {this.state.books.map(bookInLoop =>
               <BookCard key={bookInLoop.id} bookProp={bookInLoop} />
             )}
+            </Row>
           </div>
+          </Container>
           </>
         )
       }
