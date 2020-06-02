@@ -2,6 +2,8 @@ import React, { Component } from 'react'
     //import the components we will need
     import BookCard from './BookCard'
     import BookManager from '../modules/BookManager'
+    import Col from 'react-bootstrap/Col';
+
 
     class BookList extends Component {
         //define what this component needs to render
