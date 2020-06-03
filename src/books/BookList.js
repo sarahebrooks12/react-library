@@ -30,7 +30,7 @@ import React, { Component } from 'react'
         <input type="text" id="search-books" placeholder="Search"></input>
         <Container>
           <div className="container-cards">
-          <Row>
+          <Row sm={3}>
             {this.state.books.map(bookInLoop =>
               <BookCard key={bookInLoop.id} bookProp={bookInLoop} />
             )}

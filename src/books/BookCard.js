@@ -6,7 +6,7 @@ class BookCard extends Component {
   return (
     
     <Col sm>
-      <div className="App">
+      <div className="App" >
           <p>Title: {this.props.bookProp.title}</p>
           <p>Author: {this.props.bookProp.author}</p>
           <p>Genre: {this.props.bookProp.genre}</p>
