@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Col from 'react-bootstrap/Col';
 class BookCard extends Component {
+  isBookAvailable = () => this.props.bookProp.title 
   render () {
   return (
     

@@ -9,9 +9,7 @@ class NavBar extends Component {
     return (
       <header>
         <div id="background"></div>
-        <h1 className="site-title">Savant Athenaeum<br />
-          <small>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.” - Jane Austen</small>
-        </h1>
+        <h1 className="site-title">Savant Athenaeum</h1>
         <nav>
           <ul className="container">
             <li><Link className="nav-link" to="/">Home</Link></li>

@@ -5,9 +5,9 @@ import "./Library.css";
 function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Savant Athenaeum</h1>
-      </header>
+      <div id="splashPage">
+        <h1><strong>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.” - Jane Austen</strong></h1>
+        </div>
     </div>
   );
 }
