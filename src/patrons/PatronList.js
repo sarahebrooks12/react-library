@@ -23,6 +23,15 @@ import React, { Component } from 'react'
       
         return(
           <>
+           <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              this.props.history.push("/patrons/new");
+            }}
+          >
+            Add New Patron
+          </button>
           <h2>List of Patrons:</h2>
           <div>
             {this.state.patrons.map(patronInLoop =>

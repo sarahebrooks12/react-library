@@ -26,6 +26,15 @@ import React, { Component } from 'react'
       
         return(
           <>
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              this.props.history.push("/books/new");
+            }}
+          >
+            Add Book to Library
+          </button>
           <p>Search Books:</p>
         <input type="text" id="search-books" placeholder="Search"></input>
         <Container>

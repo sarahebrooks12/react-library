@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 class PatronCard extends Component {
   isPatronAvailable = () => this.props.patronProp.active === true;
   render() {
@@ -10,6 +10,9 @@ class PatronCard extends Component {
           <div>
             <br />
             <p><strong>{this.props.patronProp.name}</strong></p>
+            <Link to={`/patrons/${this.props.patronProp.id}`}>
+          <button>Details</button>
+          </Link>
           </div>
         </form>
       </div>
