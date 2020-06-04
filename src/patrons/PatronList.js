@@ -24,7 +24,7 @@ import React, { Component } from 'react'
         return(
           <>
           <h2>List of Patrons:</h2>
-          <div className="container-cards">
+          <div>
             {this.state.patrons.map(patronInLoop =>
               <PatronCard key={patronInLoop.id} patronProp={patronInLoop} />
             )}
