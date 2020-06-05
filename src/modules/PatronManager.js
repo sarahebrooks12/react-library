@@ -29,5 +29,14 @@ export default {
       },
       body: JSON.stringify({"active": false}),
     }).then((data) => data.json());
+  },
+  update(editedPatron) {
+    return fetch(`${remoteURL}/patrons/${editedPatron.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedPatron)
+    }).then(data => data.json());
   }
 }

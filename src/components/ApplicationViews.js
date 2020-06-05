@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Library from "../splashPage/Library";
 import BookList from "../books/BookList";
@@ -7,8 +7,13 @@ import BookDetails from "../books/BookDetails";
 import PatronDetails from "../patrons/PatronDetails"
 import BookForm from "../books/BookForm"
 import PatronForm from "../patrons/PatronForm"
+import Login from "./auth/Login"
+import PatronEditForm from "../patrons/PatronEditForm"
+import BookEditForm from "../books/BookEditForm"
+
 
 class ApplicationViews extends Component {
+  isAuthenticated = () => localStorage.getItem("credentials") !== null;
   render() {
     return (
       <React.Fragment>
@@ -25,7 +30,12 @@ class ApplicationViews extends Component {
           exact
           path="/books"
           render={(props) => {
-            return <BookList {...props}/>;
+            if (this.isAuthenticated()) {
+              return <BookList {...props} />;
+            } else {
+              //redirect to login
+              return <Redirect to="/login" />;
+            }
           }}
         />
         <Route
@@ -41,6 +51,12 @@ class ApplicationViews extends Component {
             );
           }}
         />
+           <Route
+          path="/books/:bookId(\d+)/edit"
+          render={(props) => {
+            return <BookEditForm {...props} />;
+          }}
+        />
         <Route
           path="/books/new"
           render={(props) => {
@@ -53,7 +69,12 @@ class ApplicationViews extends Component {
           exact
           path="/patrons"
           render={(props) => {
-            return <PatronList {...props}/>;
+            if (this.isAuthenticated()) {
+              return <PatronList {...props} />;
+            } else {
+              //redirect to login
+              return <Redirect to="/login" />;
+            }
           }}
         />
                 <Route
@@ -68,12 +89,22 @@ class ApplicationViews extends Component {
             );
           }}
         />
+            <Route
+          path="/patrons/:patronId(\d+)/edit"
+          render={(props) => {
+            return <PatronEditForm {...props} />;
+          }}
+        />
         <Route
           path="/patrons/new"
           render={(props) => {
             return <PatronForm {...props} />;
           }}
         />
+
+          {/* LOGIN */}
+
+          <Route path="/login" component={Login} />
       </React.Fragment>
     );
   }

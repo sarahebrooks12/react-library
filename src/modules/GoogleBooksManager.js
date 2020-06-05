@@ -30,14 +30,5 @@ export default {
       },
       body: JSON.stringify({"available": false}),
     }).then((data) => data.json());
-  },
-  update(editedBook) {
-    return fetch(`${remoteURL}/books/${editedBook.id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(editedBook)
-    }).then(data => data.json());
   }
 }

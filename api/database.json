@@ -22,7 +22,6 @@
     },
     {
       "id": 2,
-      "libraryId": 1,
       "title": "Harry Potter and the Chamber of Secrets",
       "author": "J.K. Rowling",
       "genre": "Fantasy",
@@ -91,16 +90,14 @@
   "patrons": [
     {
       "id": 1,
-      "libraryId": 1,
       "name": "Sarah Brooks",
-      "phone": "474-555-5555",
+      "phone": "555-555-5555",
       "email": "athenaeumLibrarian@sapl.org",
       "DOB": "08/20/89",
       "active": true
     },
     {
       "id": 2,
-      "libraryId": 1,
       "name": "Paul Brooks",
       "phone": "474-155-5555",
       "email": "paulbobrookins@sapl.org",
@@ -117,12 +114,12 @@
       "active": false
     },
     {
+      "id": 4,
       "name": "Emilia Brooks",
       "phone": "474-555-5555",
       "email": "emmy.brooks@sapl.org",
       "DOB": "07/02/18",
-      "active": true,
-      "id": 4
+      "active": true
     }
   ],
   "bookHistories": [
