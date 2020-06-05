@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+
+#background{
+      width: 100%;
+      height: 400px;
+      background-image: url('./Library.jpg');
+      background-size: cover;
+      border: 1px solid goldenrod;
+  }
+
+  header {
+    background-color:midnightblue;
+    border: goldenrod solid 3px;
+  }
+  
+  .site-title {
+    color: cornsilk;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  nav .container {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  nav .container li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: cornsilk;
+    box-sizing: border-box;
+    background-color: midnightblue;
+    list-style-type: none;
+  }
+  
+  nav .container a {
+    color: cornsilk;
+  }
+  
+  nav .container a:hover {
+    color: orangered;
+  }

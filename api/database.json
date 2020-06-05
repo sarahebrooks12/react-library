@@ -1,0 +1,135 @@
+{
+  "libraries": [
+    {
+      "id": 1,
+      "name": "Savant Athenaeum",
+      "address": "123 Main Street, Orlando, Florida",
+      "username": "savantAthenaeumPL",
+      "password": "345",
+      "url": "wikipedia.com"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "libraryId": 1,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 12345,
+      "photo": "https://m.media-amazon.com/images/I/51ohTl7gYFL._SL350_.jpg",
+      "available": false
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123451,
+      "photo": "https://m.media-amazon.com/images/I/51RDEwuovQL._SL500_.jpg",
+      "available": true
+    },
+    {
+      "id": 3,
+      "libraryId": 1,
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123452,
+      "photo": "https://m.media-amazon.com/images/I/511LCj4HF2L._SL500_.jpg",
+      "available": false
+    },
+    {
+      "id": 4,
+      "libraryId": 1,
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123453,
+      "photo": "https://m.media-amazon.com/images/I/51g0LdfhtvL._SL500_.jpg",
+      "available": true
+    },
+    {
+      "id": 5,
+      "libraryId": 1,
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123454,
+      "photo": "https://m.media-amazon.com/images/I/51ok3DFBrRL._SL500_.jpg",
+      "available": false
+    },
+    {
+      "id": 6,
+      "libraryId": 1,
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123455,
+      "photo": "https://m.media-amazon.com/images/I/51P19GScNwL._SL500_.jpg",
+      "available": true
+    },
+    {
+      "id": 7,
+      "libraryId": 7,
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "ISBN": 123456,
+      "photo": "https://m.media-amazon.com/images/I/51g7fkELjaL._SL500_.jpg",
+      "available": true
+    },
+    {
+      "title": "Verity",
+      "author": "Colleen Hoover",
+      "genre": "Thriller",
+      "ISBN": "123458",
+      "id": 8
+    }
+  ],
+  "patrons": [
+    {
+      "id": 1,
+      "name": "Sarah Brooks",
+      "phone": "555-555-5555",
+      "email": "athenaeumLibrarian@sapl.org",
+      "DOB": "08/20/89",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Paul Brooks",
+      "phone": "474-155-5555",
+      "email": "paulbobrookins@sapl.org",
+      "DOB": "10/14/81",
+      "active": true
+    },
+    {
+      "id": 3,
+      "libraryId": 1,
+      "name": "Hank Brooks",
+      "phone": "474-555-5555",
+      "email": "hank.brooks@sapl.org",
+      "DOB": "01/06/17",
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Emilia Brooks",
+      "phone": "474-555-5555",
+      "email": "emmy.brooks@sapl.org",
+      "DOB": "07/02/18",
+      "active": true
+    }
+  ],
+  "bookHistories": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "patronId": 2,
+      "dueDate": "Friday",
+      "checkOutDate": "Monday",
+      "checkInDate": "n/a"
+    }
+  ]
+}
